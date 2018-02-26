@@ -5,13 +5,11 @@ import time
 from timeit import default_timer as timer
 
 """
-Note: Functions and classes can only be called by particulary names
-depending on their perpose, i.e. you want the benchmark to measure time, the
-you'll start its name with time.
+Note: Functions and classes can only be called by particulary names depending on their perposes, 
+fx you want the benchmark to measure time, then you'll start its name with time.
 When running; the compiler go through all the non-functions(not def) first,
-and if there's something to remember, as timeout, the last command
-will be the timeout fx the code will use. Afterwards it will start with the
-functions
+and if there's something to remember, as timeout, the last command (in our example it's the command timeout) will be the one it uses. 
+Afterwards it will start compiling the functions
 """
 
 
@@ -33,7 +31,7 @@ class TimeSuite:
         for key in list(self.d.keys()):
             pass
 
-    #Letting a function to run slower than the default defines (Should work because we re-defined the timeout)
+    #Letting a function that takes longer time to run than the default defines (Should work because we re-defined the timeout)
     #Prints also the time it takes, to make sure there is an agreement
     def time_more_than_default (self):
         start = timer()
