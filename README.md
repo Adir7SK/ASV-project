@@ -16,7 +16,7 @@ See more in the following link, under "Benchmark types": https://asv.readthedocs
 The default timeout for each function is 60s, which can be sometimes problematic.
 In order to change it, you'll need to write in the class but not in a function; timeout = x, where x is a float variale, and is in seconds, i.e. timeout = 72.33 means that you've changed the timeout to be 72.33 seconds.
 
-Creating a new class, with an existing class name in the following brackets, means that the new class wil inherit all the functions from the class in the brackets. It's also possible to add other functions. Short example:
+Creating a new class, with an existing class name in the following brackets, means that the new class will inherit all the functions from the class in the brackets. It's also possible to add other functions. Short example:
 
 ```
 class TimeSuit():
