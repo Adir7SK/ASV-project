@@ -68,3 +68,19 @@ class MemSuite:
 
     def peakmem_list(self):
         [0] * 165536
+        
+class TimeSuitInharit(TimeSuite):
+    #The class will inharit all the functions in TimeSuite
+    
+    #We change the function time_destind_to_fail so it won't fail.
+    def time_destind_to_fail(self):
+        start = timer()
+        for i in range(300000000):
+            x=5
+            y=x*2
+        ell = timer() - start
+        print (ell)
+        
+    #Creating a new function only for this class
+    def time_new(self):
+        time.sleep(17.5)
