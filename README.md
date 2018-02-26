@@ -16,18 +16,22 @@ See more in the following link, under "Benchmark types": https://asv.readthedocs
 The default timeout for each function is 60s, which can be sometimes problematic.
 In order to change it, you'll need to write in the class but not in a function; timeout = x, where x is a float variale, and is in seconds, i.e. timeout = 72.33 means that you've changed the timeout to be 72.33 seconds.
 
-Writing a new class with class name and with another class name that already exists in the following brackets, will only run the functions in that class in the brackets, and will ignore the functions written in the new class. Short example:
+Creating a new class, with an existing class name in the following brackets, means that the new class wil inherit all the functions from the class in the brackets. It's also possible to add other functions. Short example:
 
 ```
 class TimeSuit():
     def time_range(self):
         code...
+    def time_upper(self):
+        code...
 class TimeNew(TimeSuit):
     def time_upper(self):
         code...
+    def time_other(self):
+        code...
 ```        
         
-The result will be that it runs the function time_range twice (once through TimeSuit and once through TimeNew) without running the function time_upper.
+The result will be that it runs the function time_range twice normally (once through TimeSuit and once through TimeNew). The function time_upper will run ones with the code in TimeSuite class, and ones with the code in TimeNew. The function time_other will run just ones.
 
 Files in this project:
 1. Dummy_benchmarking.py
