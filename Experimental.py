@@ -77,4 +77,4 @@ def longest_word(sentence):
     return ToPrint
 
 def wait():
-    time.sleep(2)
+    time.sleep(9)
