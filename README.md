@@ -33,5 +33,24 @@ class TimeNew(TimeSuit):
         
 The result will be that it runs the function time_range twice normally (once through TimeSuit and once through TimeNew). The function time_upper will run ones with the code in TimeSuite class, and ones with the code in TimeNew. The function time_other will run just ones.
 
+
+In each benchmark you can measure a function from another place, by firstly importing the module as usual, and then writing the function in the benchmark.
+The configuration file (asv.conf.json) shuold only have this:
+```
+{
+  "version": 1,
+  "project": "project",
+  "project_url": "https://github.com/Whichever_url",
+  "repo": ".",
+  "show_commit_url": "https://github.com/Same_url/commit/",
+  "branches": ["master"], 
+  "environment_type": "conda"
+}
+```
+Note that there should be a setup.
+After commiting your python files, write in the Bash: ```asv run```
+And then: ```asv publish```
+And in order to see the graph, type: ```asv preview```, and then paste the http you get.
+
 Files in this project:
 1. Dummy_benchmarking.py
