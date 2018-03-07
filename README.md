@@ -51,6 +51,7 @@ The configuration file (asv.conf.json) shuold only have this code:
 
 After commiting your python files, write in the Bash: ```asv run``` then: ```asv publish```
 And in order to see the graph, type: ```asv preview```, and then paste the http you get.
+If you wish to remove some commits from the graph before the drawing and the asv run, then you enter the file where you saved the benchmark project (but not the file named benchmarks) -> results -> DESKTOP-53K0ASV  then you normally delete whichever commit you want.
 
 Files in this project:
 1. Dummy_benchmarking.py
