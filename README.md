@@ -34,8 +34,8 @@ class TimeNew(TimeSuit):
 The result will be that it runs the function time_range twice normally (once through TimeSuit and once through TimeNew). The function time_upper will run ones with the code in TimeSuite class, and ones with the code in TimeNew. The function time_other will run just ones.
 
 
-In each benchmark you can measure a function from another place, by firstly importing the module as usual, and then writing the function in the benchmark.
-The configuration file (asv.conf.json) shuold only have this code:
+In each benchmark you can measure a function from another place, by importing as in every python file.
+The configuration file (asv.conf.json) should only have this code:
 ```
 {
   "version": 1,
@@ -51,7 +51,8 @@ The configuration file (asv.conf.json) shuold only have this code:
 
 After commiting your python files, write in the Bash: ```asv run``` then: ```asv publish```
 And in order to see the graph, type: ```asv preview```, and then paste the http you get.
-If you wish to remove some commits from the graph before the drawing and the asv run, then you enter the file where you saved the benchmark project (but not the file named benchmarks) -> results -> DESKTOP-53K0ASV  then you normally delete whichever commit you want.
+
+In order to remove some commits from the graph before its running (asv run) and drawing, enter the file where you saved the benchmark project (but not the file named benchmarks) -> results -> DESKTOP-53K0ASV  then delete whichever commit you want (each commit will be assigned with its first 8 letters).
 
 Files in this project:
 1. Dummy_benchmarking.py
