@@ -35,7 +35,7 @@ The result will be that it runs the function time_range twice normally (once thr
 
 
 In each benchmark you can measure a function from another place, by firstly importing the module as usual, and then writing the function in the benchmark.
-The configuration file (asv.conf.json) shuold only have this:
+The configuration file (asv.conf.json) shuold only have this code:
 ```
 {
   "version": 1,
@@ -47,9 +47,9 @@ The configuration file (asv.conf.json) shuold only have this:
   "environment_type": "conda"
 }
 ```
-Note that there should be a setup.
-After commiting your python files, write in the Bash: ```asv run```
-And then: ```asv publish```
+*Note that there have to be a setup file in the url.
+
+After commiting your python files, write in the Bash: ```asv run``` then: ```asv publish```
 And in order to see the graph, type: ```asv preview```, and then paste the http you get.
 
 Files in this project:
