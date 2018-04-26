@@ -20,5 +20,7 @@ Now type ```asv publish``` and then ```asv preview```. First time you'll do it, 
 Step 5:
 Open again benchmarks.py and copy into it benchmarks2.py, and go back to Step 4. Then do the same with benchmarks3.py and benchmarks4.py.
 Now you should have 3 graphs that looks like this:
+![capture1](https://user-images.githubusercontent.com/31063975/39300734-fe309e58-494c-11e8-9d15-98d1fbff51e7.PNG)
 
 You can press on each graph in order to see its details. If you choose to open time_experimental (which is the only one we changed), it should look like this:
+![capture](https://user-images.githubusercontent.com/31063975/39300791-2cdc2272-494d-11e8-811a-0b18411cdb8b.PNG)
