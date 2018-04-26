@@ -52,6 +52,7 @@ The configuration file (asv.conf.json) should only have this code:
 After commiting your python files, write in the Bash: ```asv run``` then: ```asv publish```
 And in order to see the graph, type: ```asv preview```, and then paste the http you get.
 Sometimes problems with ```asv publish``` might accure. In this case you should check the hash of the commit in the error. If the hash isn't amoung those you get in the command ```git log```, but is in the results -> DESKTOP-53K0ASV file, then delete it from results -> DESKTOP-53K0ASV, and you are good to go.
+If there's problems with ```asv preview``` then you'll probably have to change the port. Do that by typing ```asv preview --port 8081```, which will change the port to port number 8081, instead of the default, which is normally 8080.
 
 In order to remove some commits from the graph before its running (asv run) and drawing, enter the file where you saved the benchmark project (but not the file named benchmarks) -> results -> DESKTOP-53K0ASV  then delete whichever commit you want (each commit will be assigned with its first 8 letters).
 
