@@ -1,5 +1,6 @@
 # ASV-project
 
+Make sure you are in a git repository and in an enviroment
 Benchmark suite intended to run with Airspeed-velocity:
 http://asv.readthedocs.io/en/latest/
 To run the benchmark, type:
