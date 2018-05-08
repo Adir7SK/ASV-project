@@ -16,7 +16,7 @@ In the file where you downloaded asv, go in to the the folder named benchmarks, 
 
 Step 4:
 Type ```asv run```, see that you don't get any errors or failures. Then commit it to git (```git add benchmarks/benchmarks.py``` and ```git commit```).
-Now type ```asv publish``` and then ```asv preview```. First time you'll do it, you'll get one point on each graph (since there's only 3 functions, not including setup, there will only be 3 graphs).
+Now type ```asv publish``` and then ```asv preview```. First time you do it, you'll get one point on each graph (since there's only 3 functions, not including setup, there will only be 3 graphs).
 
 Step 5:
 Open again benchmarks.py and copy into it benchmarks2.py, and go back to Step 4. Then do the same with benchmarks3.py and benchmarks4.py.
