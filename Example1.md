@@ -12,7 +12,7 @@ Now run it for the first time by typing ```asv run```. Afterwards type ```asv ma
 
 Step 3:
 Let's try with our benchmarks files. Create a new Python file (dosn't matter where) called Experimental.py, and paste the code from the Experimental.py we have here (and obviously make sure that it runs).
-In the file where you downloaded asv, go in to the the folder named benchmarks, and then open the Python file named benchmarks. Paste the code from benchmarks1.py we have here (and obviously make sure that it runs). *Note that you have to change there, the path to the place where Experimental.py located, up in sys.path.append('Insert the location of Experimental.py')
+In the file where you downloaded asv, go in to the the folder named benchmarks, and then open the Python file named benchmarks. Paste the code from benchmarks1.py we have here (and obviously make sure that it runs). *Note that you have to change the path to the place where Experimental.py located, up in sys.path.append('Insert the location of Experimental.py')
 
 Step 4:
 Type ```asv run```, see that you don't get any errors or failures. Then commit it to git (```git add benchmarks/benchmarks.py``` and ```git commit```).
