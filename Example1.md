@@ -2,7 +2,7 @@
 
 *Firstly make sure you are in the file where you want the airspeed velocity.
 
-Step 1: Install
+Step 1: Install:
 Airspeed velocity is a standard Python package, and the latest version may be installed with ```pip install asv```. The project uses ```setuptools```, and can also be installed by cloning the repository and using: ```python setup.py install```.
 For more information: https://asv.readthedocs.io/en/latest/installing.html
 
