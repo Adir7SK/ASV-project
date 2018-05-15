@@ -4,5 +4,5 @@ setup(name='ExperimentingSetup',
       description='Experimental setup for asv project',
       author_email='adir7saly@gmail.com',
       url='https://github.com/Adir7SK/ASV-project/',
-      packages=['/users/adir7/Desktop/asv_proj/benchmarks'],
+      packages=['/users/acodes/Desktop/qcodes_benchmarking/benchmarks'],
       )
