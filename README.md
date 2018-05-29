@@ -4,10 +4,10 @@ Before started, make sure you are in a git repository and in an enviroment.
 Benchmark suite intended to run with Airspeed-velocity:
 http://asv.readthedocs.io/en/latest/
 To run the benchmark, type:
-asv run
+```asv run```
 in the command prompt.
 
-Put everything in place - in Example.md (https://github.com/Adir7SK/ASV-project/blob/master/Example.md) do only step 1 and 2, for installing and adding all the proper files.
+Put everything in place - in Example.md (https://github.com/Adir7SK/ASV-project/blob/master/Example.md) follow only step 1 and 2, for installing and adding all the proper files.
 
 About benchmarking:
 
