@@ -7,6 +7,8 @@ To run the benchmark, type:
 asv run
 in the command prompt.
 
+Put everything in place - in Example.md (https://github.com/Adir7SK/ASV-project/blob/master/Example.md) do only step 1 and 2, for installing and adding all the proper files.
+
 About benchmarking:
 
 Each class and function have to have a particular name, depending on its perposes.
