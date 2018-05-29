@@ -58,7 +58,7 @@ If there's problems with ```asv preview``` then you'll probably have to change t
 In order to remove some commits from the graph before its running (asv run) and drawing, enter the file where you saved the benchmark project (but not the file named benchmarks) -> results -> DESKTOP-53K0ASV  then delete whichever commit you want (each commit will be assigned with its first 8 letters).
 
 Working with environments:
-If you want to work with special environment, you should have your asv project with a modified configuration file (asv.conf.json), in the project with all the modules you want to use.
+If you want to work with special environment, you should have your asv project with a modified configuration file (asv.conf.json), in the project with all the modules you want to use(normally you'll have to change in the configuration file the "project_url" and "show_commit_url"). The reason for that is that asv builds, each time you run it, a new environment.
 In the folder Benchmarks, you can add as many Python files as you want, and if you want the Airspeed Velocity (asv) program to measure them, you should start their names with "benchmark".
 If performing a measurements on electronic devices, such as Keysight 34465A, in addition to defining connection under setup, you should also remember to have a teardown function.
 
