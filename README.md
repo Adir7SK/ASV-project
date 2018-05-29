@@ -12,7 +12,7 @@ About benchmarking:
 Each class and function have to have a particular name, depending on its perposes.
 If you fx start the functions name with time, then it will be a time benchmarking. 
 asv understands how to handle the prefix in either CamelCase or lowercase with underscores (fx def time_measure and def TimeMeasure).
-See more in the following link, under "Benchmark types": https://asv.readthedocs.io/en/latest/writing_benchmarks.html#writing-benchmarks
+See more in the following link: https://asv.readthedocs.io/en/latest/writing_benchmarks.html#benchmark-types
 
 The default timeout for each function is 60s, which can be sometimes problematic.
 In order to change it, you'll need to write in the class but not in a function; timeout = x, where x is a float variale, and is in seconds, i.e. timeout = 72.33 means that you've changed the timeout to be 72.33 seconds.
@@ -34,7 +34,7 @@ class TimeNew(TimeSuit):
         
 The result will be that it runs the function time_range twice normally (once through TimeSuit and once through TimeNew). The function time_upper will run ones with the code in TimeSuite class, and ones with the code in TimeNew. The function time_other will run just ones.
 
-Useful options for ```asv run``` is adding ```--show-stderr``` to see the results (if a function have outputs) and full explanation of errors/possible errors. Another one is adding ```--python=python``` if you don't want the program to reinstall everything every time you run it, so you won't need to wait to long. See more here: https://asv.readthedocs.io/en/latest/writing_benchmarks.html#writing-benchmarks
+Useful options for ```asv run``` is adding ```--show-stderr``` to see the results (if a function have outputs) and full explanation of errors/possible errors. Another one is adding ```--python=python``` if you don't want the program to reinstall everything every time you run it, so you won't need to wait to long. See more here: https://asv.readthedocs.io/en/latest/writing_benchmarks.html#running-benchmarks-during-development
 
 In each benchmark you can measure a function from another place, by importing as in every python file.
 The configuration file (asv.conf.json) should only have this code:
