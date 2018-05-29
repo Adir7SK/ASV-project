@@ -63,6 +63,8 @@ If you want to work with special environment, you should have your asv project w
 In the folder Benchmarks, you can add as many Python files as you want, and if you want the Airspeed Velocity (asv) program to measure them, you should start their names with "benchmark".
 If performing a measurements on electronic devices, such as Keysight 34465A, in addition to defining connection under setup, you should also remember to have a teardown function.
 
+*Precis measurements: Basically, in order to have the most accurate measurements, try to put as much as possible in the ```setup``` and ```teardown``` functions, and less in the functions you want to benchmark.You'll find a complete explanation for every type of function in here: https://asv.readthedocs.io/en/stable/writing_benchmarks.html#timing
+
 Files in this project:
 1. Example.md - how to use asv step by step 
 2. Used in Example.md: experimental.py and benchmarks1-4.
