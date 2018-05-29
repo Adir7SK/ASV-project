@@ -67,6 +67,8 @@ If performing a measurements on electronic devices, such as Keysight 34465A, in 
 
 *Precis measurements: Basically, in order to have the most accurate measurements, try to put as much as possible in the ```setup``` and ```teardown``` functions, and less in the functions you want to benchmark.You'll find a complete explanation for every type of function in here: https://asv.readthedocs.io/en/stable/writing_benchmarks.html#timing
 
+If you have any problem not explained here, please message me on: adir7saly@gmail.com , or see if you can find an answer here (if not, create a new issue): https://github.com/airspeed-velocity/asv/issues
+
 Files in this project:
 1. Example.md - how to use asv step by step 
 2. Used in Example.md: experimental.py and benchmarks1-4.
