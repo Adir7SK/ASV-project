@@ -1,3 +1,4 @@
+import timeit
 import qcodes
 from qcodes.instrument_drivers.Keysight.Keysight_34465A import Keysight_34465A
 
