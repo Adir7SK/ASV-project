@@ -19,7 +19,7 @@ Type ```asv run```, see that you don't get any errors or failures. Then commit i
 Now type ```asv publish``` and then ```asv preview```. First time you do it, you'll get one point on each graph, that match the results you get from ```asv run``` (since there's only 3 functions, not including setup, there will only be 3 graphs).
 
 Step 5:
-Open again benchmarks.py and copy into it benchmarks2.py, and go back to Step 4. Then do the same with benchmarks3.py and benchmarks4.py.
+Open again benchmarks.py and add to the function time_experimental ```e.wait()```, and go back to Step 4. Then remove one of the ```e.wait``` and go back to step 4. Finally, put the remaining ```e.wait()``` in the for loop: ```for i in range(8)``` and back to step 4.
 Now you should have 3 graphs that looks like this:
 ![capture1](https://user-images.githubusercontent.com/31063975/39300734-fe309e58-494c-11e8-9d15-98d1fbff51e7.PNG)
 
